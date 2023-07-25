@@ -1,0 +1,186 @@
+.mainlogin{
+    background-image: linear-gradient(
+        to top,
+        rgb(11, 10, 10),
+        rgb(11, 10, 10),
+        rgb(45, 42, 42)
+      );
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.navlogin{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    padding-bottom: 20px;
+}
+
+.spotify-text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    color: white;
+    margin-left: 5px;
+    
+   
+    
+
+}
+.formlogin{
+    width: 45%;
+    height: 1auto;
+    background-color: black;
+    border-radius: 6px;
+    align-self: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+.login-spotify-text{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-self: center;
+    font-size: 50px;
+
+
+}
+.button{
+    border: 1px solid rgb(152, 150, 150);
+    background-color: black;
+    border-radius: 50px;
+    
+    color: white;
+    margin-top: 10px;
+   
+    width: 300px;
+    height: 50px;
+    align-self: center;
+    
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.button:hover{
+    border: 1px solid rgb(230, 228, 228);
+}
+.line {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(67, 66, 66);
+    margin-top: 30px;
+    width: 70%;
+  
+    padding: 0;
+    margin-top: 10px;
+  }
+  .form{
+    margin-top: 30px;
+  }
+.email-text,.remember-me{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    margin-left: 28%;
+}
+
+.circle-alert{
+    font-size: 14px;
+    color: red;
+    margin-left: 28%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 5px;
+}
+.circle-alert2{
+    font-size: 16px;
+    color: red;
+    margin-left: 28%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 5px;
+}
+
+.password-text{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    margin-left: 28%;
+   
+    
+}
+.email,.password{
+    height: 30px;
+    width: 300px;
+    background-color: rgb(52, 50, 50);
+    border-radius: 6px;
+    border: 1px,rgb(116, 115, 115);
+    margin-left: 28%;
+    margin-top: 5px;
+}
+.email[type=text]{
+    font-size: 15px;
+    color: white;
+}
+.password[type=password]{
+    font-size: 15px;
+    color: white;
+}
+.button-login{
+    border: 1px solid rgb(12, 228, 55);
+    background-color: rgb(12, 228, 55);
+    border-radius: 50px;
+    
+    color: rgb(19, 18, 18);
+    margin-top: 10px;
+   
+    width: 300px;
+    height: 50px;
+    align-self: center;
+    font-size: 15px;
+    
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 28%;
+    margin-top: 20px;
+}
+.forgot-password{
+    margin-left: 39%;
+    margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+
+}
+.forgot-password:hover{
+    color: rgb(12, 228, 55);
+}
+.line2{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(67, 66, 66);
+    margin-top: 30px;
+    width: 70%;
+  
+    padding: 0;
+    margin-top: 40px;
+
+}
+.spotify-signup{
+    
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+
+}
+.spotify-signup:hover{
+    color: rgb(12, 228, 55);
+}
+.account-text{
+    margin-left: 28%;
+    margin-top: 50px;
+    color: rgb(86, 84, 84);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 10%;
+
+}

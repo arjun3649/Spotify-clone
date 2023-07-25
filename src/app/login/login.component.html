@@ -1,0 +1,104 @@
+<div class="mainlogin">
+  <div class="navlogin">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <i
+      class="fa-brands fa-spotify"
+      style="
+        color: #f8f9fc;
+        font-size: 35px;
+        margin-top: 15px;
+        margin-left: 20px;
+      "
+    ></i
+    ><span class="spotify-text">Spotify</span>
+  </div>
+  <div class="formlogin">
+    <p class="login-spotify-text">Login to spotify</p>
+    <button class="button">
+      <i
+        class="fa-brands fa-facebook"
+        style="
+          color: #1a84d5;
+          font-size: 20px;
+          margin-right: 22px;
+          margin-left: 20px;
+        "
+      ></i
+      >continue with facebook
+    </button>
+    <button class="button">
+      <div id="g_id_onload"
+      data-client_id="1044868497544-7q9itphncrr2974pjbhgi3on4ne9s9gu.apps.googleusercontent.com"
+      data-context="signin"
+      data-ux_mode="popup"
+      data-login_uri="http://localhost:3000/api/login"
+      data-itp_support="true">
+ </div>
+ 
+ <div class="g_id_signin"
+      data-type="standard"
+      data-shape="pill"
+      data-theme="filled_black"
+      data-text="signin_with"
+      data-size="large"
+      data-logo_alignment="left">
+ </div>
+    </button>
+    <button class="button">
+      <i
+        class="fa-brands fa-apple"
+        style="color: #ffffff; font-size: 20px; margin-right: 20px"
+      ></i
+      >continue with apple
+    </button>
+    <button class="button">continue with phone number</button>
+    <br /><br />
+    <div class="underline">
+      <hr class="line" />
+    </div>
+    <form class="form" #f="ngForm" (ngsubmit)="onsubmit(f)">
+      <label class="email-text">Email or username</label><br />
+
+      <input
+        class="email"
+        type="text"
+        placeholder="Email or username"
+        name="email"
+        ngModel
+        #email="ngModel"
+        required
+        [pattern]="email_pattern"
+        
+      /><br>
+      <i *ngIf="email.invalid && email.touched || email.hasError('pattern') && email.hasError('required')"  class="fa-solid fa-exclamation circle-alert">Please enter your Spotify username or email address.</i>
+      <br>
+      <label class="password-text">Password</label><br />
+      <input
+        class="password"
+        type="password"
+        placeholder="password"
+        name="password"
+        #password="ngModel"
+        ngModel
+        required
+        [pattern]="password_pattern"
+      />
+      <i *ngIf="password.touched && password.hasError('required')"   class="fa-solid fa-exclamation circle-alert2 " >please enter your password</i>
+      <button type="submit" class="button-login" [disabled]="f.form.status=='INVALID'">Log In</button>
+    </form>
+    <a href="#" class="forgot-password">Forgot your password?</a>
+    <div class="underline">
+      <hr class="line2" />
+    </div>
+    <p class="account-text">
+      Don't have an account?
+      <a routerLink="/signuppage" class="spotify-signup">Sign up for spotify</a>
+    </p>
+  </div>
+</div>
